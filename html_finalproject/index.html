@@ -7,6 +7,7 @@
     <title>Diego Romero - Fan Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 
@@ -17,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#aboutme">
                 <img src="images/logo_drs_ei.jpeg" class="rounded-circle" alt="Logo" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -193,14 +194,52 @@
     <!-- Projects -->
     <section id="projects" class="container py-5">
         <h2 class="text-center mb-4">Projects</h2>
-        <p class="text-center text-muted">Coming soon: A curated list of my key software and consulting projects.</p>
-    </section>
+      
+        <div class="mb-4">
+          <h5 class="fw-bold">CRM Application (Customer Relationship Management)</h5>
+          <p>
+            • A comprehensive CRM Application was developed designed to optimize the registration, management, and tracking of clients for the company Megatel SAS. This project was built under Clean Architecture principles, ensuring a robust, maintainable, and scalable codebase.
+          </p>
+          <p class="mb-1"><strong>Technology Used:</strong></p>
+          <ul>
+            <li>Backend: .NET, C#</li>
+            <li>Frontend: Blazor</li>
+            <li>Database: Microsoft SQL Server (MSSQL)</li>
+          </ul>
+          <hr>
+        </div>
+      
+        <div class="mb-4">
+          <h5 class="fw-bold">ERP Accounting Application (Enterprise Resource Planning)</h5>
+          <p>
+            • A complete ERP Accounting Application was built, focused on the efficient management of financial and administrative operations. This application covers critical functionalities such as inventory management and control, certification generation, payroll management, accounts receivable control, and billing. Like the CRM, this project adhered to Clean Architecture to guarantee its flexibility and durability.
+          </p>
+          <p class="mb-1"><strong>Technology Used:</strong></p>
+          <ul>
+            <li>Backend: Python</li>
+            <li>Frontend: JavaScript con Bootstrap</li>
+          </ul>
+          <hr>
+        </div>
+      
+        <div class="mb-4">
+          <h5 class="fw-bold">Company Access Control Application</h5>
+          <p>
+            • A Company Access Control Application was developed with the objective of efficiently registering and managing the entry and exit of both employees and visitors. This solution was designed to streamline security processes and access control.
+          </p>
+          <p class="mb-1"><strong>Technology Used:</strong></p>
+          <ul>
+            <li>Plataforma de Desarrollo: Oracle APEX</li>
+          </ul>
+          <hr>
+        </div>
+      </section>
 
     <!-- Recommendations -->
     <section id="recommendations" class="bg-white py-5">
         <div class="container">
             <h2 class="text-center mb-4">Recommendations</h2>
-            <div class="row g-3 mb-5" id="recommendationsList">                
+            <div class="row g-3 mb-5" id="recommendationsList">
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm text-center p-3">
                         <p class="fst-italic">Recomendación Uno</p>
@@ -244,6 +283,13 @@
         © 2025 Diego Romero - Single Page Professional Profile
     </footer>
 
+    <!-- Botón flotante "Volver arriba" -->
+    <!-- Botón flotante "Volver arriba" -->
+    <button id="btnScrollTop" class="btn btn-primary rounded-circle position-fixed shadow"
+        style="bottom: 20px; right: 20px; display: none; z-index: 1050;" title="Volver al inicio">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
 </body>
 
 </html>
