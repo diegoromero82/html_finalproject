@@ -194,46 +194,53 @@
     <!-- Projects -->
     <section id="projects" class="container py-5">
         <h2 class="text-center mb-4">Projects</h2>
-      
+
         <div class="mb-4">
-          <h5 class="fw-bold">CRM Application (Customer Relationship Management)</h5>
-          <p>
-            • A comprehensive CRM Application was developed designed to optimize the registration, management, and tracking of clients for the company Megatel SAS. This project was built under Clean Architecture principles, ensuring a robust, maintainable, and scalable codebase.
-          </p>
-          <p class="mb-1"><strong>Technology Used:</strong></p>
-          <ul>
-            <li>Backend: .NET, C#</li>
-            <li>Frontend: Blazor</li>
-            <li>Database: Microsoft SQL Server (MSSQL)</li>
-          </ul>
-          <hr>
+            <h5 class="fw-bold">CRM Application (Customer Relationship Management)</h5>
+            <p>
+                • A comprehensive CRM Application was developed designed to optimize the registration, management, and
+                tracking of clients for the company Megatel SAS. This project was built under Clean Architecture
+                principles, ensuring a robust, maintainable, and scalable codebase.
+            </p>
+            <p class="mb-1"><strong>Technology Used:</strong></p>
+            <ul>
+                <li>Backend: .NET, C#</li>
+                <li>Frontend: Blazor</li>
+                <li>Database: Microsoft SQL Server (MSSQL)</li>
+            </ul>
+            <hr>
         </div>
-      
+
         <div class="mb-4">
-          <h5 class="fw-bold">ERP Accounting Application (Enterprise Resource Planning)</h5>
-          <p>
-            • A complete ERP Accounting Application was built, focused on the efficient management of financial and administrative operations. This application covers critical functionalities such as inventory management and control, certification generation, payroll management, accounts receivable control, and billing. Like the CRM, this project adhered to Clean Architecture to guarantee its flexibility and durability.
-          </p>
-          <p class="mb-1"><strong>Technology Used:</strong></p>
-          <ul>
-            <li>Backend: Python</li>
-            <li>Frontend: JavaScript con Bootstrap</li>
-          </ul>
-          <hr>
+            <h5 class="fw-bold">ERP Accounting Application (Enterprise Resource Planning)</h5>
+            <p>
+                • A complete ERP Accounting Application was built, focused on the efficient management of financial and
+                administrative operations. This application covers critical functionalities such as inventory management
+                and control, certification generation, payroll management, accounts receivable control, and billing.
+                Like the CRM, this project adhered to Clean Architecture to guarantee its flexibility and durability.
+            </p>
+            <p class="mb-1"><strong>Technology Used:</strong></p>
+            <ul>
+                <li>Backend: Python</li>
+                <li>Frontend: JavaScript con Bootstrap</li>
+            </ul>
+            <hr>
         </div>
-      
+
         <div class="mb-4">
-          <h5 class="fw-bold">Company Access Control Application</h5>
-          <p>
-            • A Company Access Control Application was developed with the objective of efficiently registering and managing the entry and exit of both employees and visitors. This solution was designed to streamline security processes and access control.
-          </p>
-          <p class="mb-1"><strong>Technology Used:</strong></p>
-          <ul>
-            <li>Plataforma de Desarrollo: Oracle APEX</li>
-          </ul>
-          <hr>
+            <h5 class="fw-bold">Company Access Control Application</h5>
+            <p>
+                • A Company Access Control Application was developed with the objective of efficiently registering and
+                managing the entry and exit of both employees and visitors. This solution was designed to streamline
+                security processes and access control.
+            </p>
+            <p class="mb-1"><strong>Technology Used:</strong></p>
+            <ul>
+                <li>Plataforma de Desarrollo: Oracle APEX</li>
+            </ul>
+            <hr>
         </div>
-      </section>
+    </section>
 
     <!-- Recommendations -->
     <section id="recommendations" class="bg-white py-5">
@@ -288,7 +295,27 @@
         style="bottom: 20px; right: 20px; display: none; z-index: 1050;" title="Volver al inicio">
         <i class="bi bi-arrow-up"></i>
     </button>
-    
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="recommendationModal" tabindex="-1" aria-labelledby="recommendationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100" id="recommendationModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Thanks for leaving a recommendation!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
