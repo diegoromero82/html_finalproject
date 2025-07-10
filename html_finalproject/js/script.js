@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const recommendationsContainer = document.getElementById("recommendationsList");
   
     form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Evita recarga de página
+      event.preventDefault(); 
   
       const name = nameInput.value.trim();
       const message = messageInput.value.trim();

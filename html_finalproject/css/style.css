@@ -3,7 +3,7 @@
   width: 100%;
   object-fit: contain;
   padding: 1rem;
-  background-color: #f8f9fa; /* Fondo suave para imágenes con fondo blanco/transparente */
+  background-color: #f8f9fa;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -19,7 +19,7 @@
   bottom: 0.2rem;
   width: 100%;
   height: 2px;
-  background-color: #ffffff; /* Blanco para fondo azul (ajusta si usas otro color) */
+  background-color: #ffffff;
 }
 
 #btnScrollTop:hover {
