@@ -26,3 +26,72 @@
   background-color: #0d6efd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.education-card-small {
+  transition: all 0.3s ease;
+}
+
+.education-card-small:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.softskill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.softskill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#experience .card {
+  transition: transform 0.3s ease;
+}
+
+#experience .card:hover {
+  transform: translateY(-5px);
+}
+
+.flip-card {
+  perspective: 1000px;
+  width: 250px;
+  min-width: 250px;
+  height: 220px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+}
+
+.flip-card-front {
+  background-color: white;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #0d6efd;
+  color: white;
+  transform: rotateY(180deg);
+}
